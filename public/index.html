@@ -9,12 +9,13 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
     <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://kit.fontawesome.com/4f937bf524.js"></script>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            Logo
+            <img src="./img/logo.png" alt="">
         </div>
         <div class="brand">festicket</div>
         <input type="search" placeholder="Festival, Artist, Country...">
@@ -28,11 +29,35 @@
                 </li>
             </ul>
         </div>
+        <div class="login-icon">
+            <div class="circle">
+                <i class="fas fa-user-alt"></i>
+            </div>
+        </div>
+
         <div class="login">
-            <i class="fas fa-user-alt"></i>
             log in
         </div>
     </header>
+    <section id="festival-jumbo">
+        <div class="festival-title">
+            <h3>find your festival</h3>
+        </div>
+        <div class="filter-festival">
+            <div class="filter-artist">
+                <p>any artist</p>
+                <div class="arrow-button">
+                    <a href="#"><i class="fas fa-chevron-down"></i></a>
+                </div>
+            </div>
+            <div class="filter-country">
+                <p>any country</p>
+                <div class="arrow-button">
+                    <a href="#"><i class="fas fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

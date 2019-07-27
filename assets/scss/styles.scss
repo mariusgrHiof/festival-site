@@ -4,17 +4,26 @@
 header {
     display: flex;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    font-family: roboto, sans-serif;
 
     .logo {
         font-size: 2rem;
         width: 5%;
+
+        img {
+            display: flex;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+
+        }
     }
 
     .brand {
         font-size: 2rem;
         width: 5%;
-        margin-left: 15px;
+        margin: 0 20px;
         font-weight: 600;
 
     }
@@ -22,25 +31,34 @@ header {
     input {
         margin-left: 35px;
         padding: 15px;
-        width: 40%;
-        background-color: rgba(223, 219, 219, 0.588);
+        width: 30%;
+        background-color: rgba(236, 230, 230, 0.438);
+        color: rgb(78, 78, 78);
         border: none;
         font-weight: 700;
         font-size: 1rem;
     }
 
+    input::placeholder {
+        color: rgb(184, 182, 182);
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+
+
+
     .menu {
         display: flex;
         justify-content: flex-end;
-        margin-left: 40%;
-        width: 40%;
-
-
+        width: 60%;
 
         ul {
 
             font-size: 1.1rem;
-            border-right: 1px solid rgba(170, 170, 170, 0.1);
+            border-right: 2px solid rgba(170, 170, 170, 0.1);
 
             li {
 
@@ -68,13 +86,109 @@ header {
     }
 
     .login {
+        width: 5%;
         display: flex;
-        justify-content: center;
-        width: 10%;
         font-size: 1.1rem;
         text-transform: capitalize;
         cursor: pointer;
         font-weight: 600;
         color: gray;
+
+    }
+
+    .login-icon {
+        width: 5%;
+        display: flex;
+        justify-content: center;
+
+
+        .circle {
+            width: 40px;
+            height: 40px;
+            background: lightgray;
+            border-radius: 50%;
+
+            .fas {
+                position: relative;
+                top: 10px;
+                left: 13px;
+                color: gray;
+            }
+        }
+    }
+
+
+
+
+}
+
+#festival-jumbo {
+    position: relative;
+    background-color: #222326;
+    color: white;
+    padding: 45px 0;
+    height: 170px;
+
+    .festival-title {
+        display: flex;
+        justify-content: center;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+
+    .filter-festival {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        position: absolute;
+        top: 106px;
+        left: 516px;
+        margin: 0 auto;
+        color: black;
+        width: 900px;
+        height: 100px;
+        background-color: white;
+        -webkit-box-shadow: -3px 3px 26px -9px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -3px 3px 26px -9px rgba(0, 0, 0, 0.75);
+        box-shadow: -3px 3px 26px -9px rgba(0, 0, 0, 0.75);
+
+        .filter-artist {
+            display: flex;
+            float: left;
+            width: 50%;
+
+            border-right: 1px solid rgba(97, 96, 96, 0.3);
+
+            p {
+                width: 90%;
+
+                font-size: 1.2rem;
+            }
+
+            .arrow-button {
+                width: 10%;
+            }
+        }
+
+        .filter-country {
+            float: left;
+            display: flex;
+            width: 50%;
+
+            p {
+                width: 90%;
+
+                font-size: 1.2rem;
+            }
+
+            .arrow-button {
+                width: 10%;
+            }
+        }
     }
 }
