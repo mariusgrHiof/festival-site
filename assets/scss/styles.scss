@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import "reset";
 
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -102,7 +108,7 @@ header {
         justify-content: center;
 
 
-        .circle {
+        .login-circle {
             width: 40px;
             height: 40px;
             background: lightgray;
@@ -122,8 +128,9 @@ header {
 
 }
 
+
+
 #festival-jumbo {
-    position: relative;
     background-color: #222326;
     color: white;
     padding: 45px 0;
@@ -140,17 +147,23 @@ header {
         }
     }
 
+
+
+
+}
+
+#filter {
+    position: relative;
+    top: -92px;
+
     .filter-festival {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 40px;
-        position: absolute;
-        top: 106px;
-        left: 516px;
-        margin: 0 auto;
+        margin: 50px auto;
         color: black;
-        width: 900px;
+        width: 1050px;
         height: 100px;
         background-color: white;
         -webkit-box-shadow: -3px 3px 26px -9px rgba(0, 0, 0, 0.75);
@@ -158,11 +171,15 @@ header {
         box-shadow: -3px 3px 26px -9px rgba(0, 0, 0, 0.75);
 
         .filter-artist {
+            height: 60px;
             display: flex;
+            justify-content: center;
+            align-items: center;
             float: left;
             width: 50%;
-
-            border-right: 1px solid rgba(97, 96, 96, 0.3);
+            padding: 0 15px;
+            text-transform: capitalize;
+            border-right: 1px solid rgba(223, 205, 205, 0.3);
 
             p {
                 width: 90%;
@@ -178,7 +195,12 @@ header {
         .filter-country {
             float: left;
             display: flex;
+            justify-content: center;
+            align-items: center;
             width: 50%;
+            padding: 0 15px;
+            text-transform: capitalize;
+
 
             p {
                 width: 90%;
@@ -190,5 +212,125 @@ header {
                 width: 10%;
             }
         }
+    }
+
+    .filter-list {
+        color: black;
+
+        ul {
+            display: flex;
+
+            li {
+                padding: 0 10px;
+
+                .filter-circle {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 90px;
+                    height: 50px;
+                    border-radius: 45%;
+                    color: darkgray;
+                    text-align: center;
+                    background: rgba(250, 243, 243, 0.753);
+                    font-size: 1.1rem;
+                    font-weight: 600;
+
+
+
+                }
+            }
+
+
+
+
+        }
+    }
+
+}
+
+#upcoming-festivals {
+    position: relative;
+    top: -50px;
+
+    h2 {
+        font-size: 2rem;
+        padding: 20px 15px;
+    }
+
+    .festival {
+        display: inline-block;
+        width: 30%;
+        margin: 0 15px;
+
+        .festival-img {
+
+            img {
+                width: 320px;
+                height: 200px;
+            }
+        }
+
+        .info {
+            margin-left: 15px;
+
+            h3 {
+                font-size: 1.2rem;
+                font-weight: 600;
+                padding: 20px 0;
+            }
+
+            .location {
+                margin: 5px 0;
+                line-height: 25px;
+
+                .fas {
+                    position: relative;
+                    top: -2px;
+                    color: red;
+                    font-size: .2rem;
+                }
+            }
+
+            .genre {
+                display: flex;
+                align-items: center;
+
+                .fas {
+                    margin: 0 5px;
+                    color: red;
+                    font-size: .2rem;
+                }
+            }
+
+            .onsale {
+                display: inline-block;
+                color: grey;
+                text-transform: capitalize;
+                border: 1px solid gray;
+                width: fit-content;
+                padding: 3px;
+                margin: 10px 0;
+            }
+
+            .book-festival {
+                text-transform: capitalize;
+                display: inline-block;
+                margin-left: 120px;
+                color: red;
+
+
+
+
+                .book-now {
+
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+            }
+
+
+        }
+
     }
 }
