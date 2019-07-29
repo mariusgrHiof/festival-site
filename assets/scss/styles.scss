@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&display=swap');
 @import "reset";
 
 
@@ -15,7 +16,7 @@ header {
 
     .logo {
         font-size: 2rem;
-        width: 5%;
+        width: 3.5%;
 
         img {
             display: flex;
@@ -27,31 +28,51 @@ header {
     }
 
     .brand {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
         width: 5%;
         margin: 0 20px;
         font-weight: 600;
+        letter-spacing: -3px;
 
     }
 
-    input {
+
+    .search-field {
+        position: relative;
         margin-left: 35px;
-        padding: 15px;
         width: 30%;
-        background-color: rgba(236, 230, 230, 0.438);
-        color: rgb(78, 78, 78);
-        border: none;
-        font-weight: 700;
-        font-size: 1rem;
+
+        .search-icon {
+            position: absolute;
+            top: 13px;
+            left: 9px;
+            font-size: 1.2rem;
+            color: gray;
+
+        }
+
+        input {
+            width: 85%;
+            padding: 15px 0 15px 45px;
+            background-color: rgba(236, 230, 230, 0.438);
+            color: rgb(78, 78, 78);
+            border: none;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        input::placeholder {
+            color: rgb(184, 182, 182);
+        }
+
+        input:focus {
+            outline: none;
+        }
     }
 
-    input::placeholder {
-        color: rgb(184, 182, 182);
-    }
 
-    input:focus {
-        outline: none;
-    }
 
 
 
@@ -60,6 +81,7 @@ header {
         display: flex;
         justify-content: flex-end;
         width: 60%;
+        margin-right: 20px;
 
         ul {
 
@@ -103,7 +125,7 @@ header {
     }
 
     .login-icon {
-        width: 5%;
+        width: 3.5%;
         display: flex;
         justify-content: center;
 
@@ -111,7 +133,7 @@ header {
         .login-circle {
             width: 40px;
             height: 40px;
-            background: lightgray;
+            background: rgba(245, 240, 240, 0.781);
             border-radius: 50%;
 
             .fas {
@@ -137,10 +159,12 @@ header {
     height: 170px;
 
     .festival-title {
+
         display: flex;
         justify-content: center;
 
         h3 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 2rem;
             font-weight: 600;
             text-transform: capitalize;
@@ -153,6 +177,7 @@ header {
 }
 
 #filter {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: relative;
     top: -92px;
 
@@ -215,6 +240,7 @@ header {
     }
 
     .filter-list {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: black;
 
         ul {
@@ -250,6 +276,7 @@ header {
 }
 
 #upcoming-festivals {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: relative;
     top: -50px;
 
@@ -316,11 +343,17 @@ header {
             .book-festival {
                 text-transform: capitalize;
                 display: inline-block;
-                margin-left: 120px;
+                margin-left: 110px;
                 color: red;
 
 
+                .fas {
+                    position: relative;
+                    top: 3px;
+                    font-size: 1.5rem;
+                    margin-left: 5px;
 
+                }
 
                 .book-now {
 
